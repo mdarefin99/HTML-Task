@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>University Admission Form</title>
+
+
+</style>
+
+</head>
+<body>
+
+<h2>University Online Admission Form</h2>
+
+<form action="#" enctype="multipart/form-data">
+
+    <!-- PERSONAL INFO -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fname">Full Name:</label><br>
+        <input type="text" id="fname" name="fullname" required maxlength="50"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="Sports">
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="music" name="interests" value="Music">
+        <label for="music">Music</label>
+
+        <input type="checkbox" id="tech" name="interests" value="Technology">
+        <label for="tech">Technology</label>
+
+        <input type="checkbox" id="others" name="interests" value="others">
+        <label for="others">Others</label>
+
+        <br><br>
+    </fieldset>
+
+    <!-- ACADEMIC INFO-->
+    <fieldset>
+        <legend>Academic Information</legend>
+
+        <label for="board">HSC BOARD</label><br>
+        <input type="text" id="board" name="hscBoard" required maxlength="20"><br><br>
+
+        <label for="hsc">HSC GPA:</label><br>
+        <input type="text" id="hsc" name="hsc_gpa" required maxlength="5"><br><br>
+
+        <label for="board">SSC BOARD</label><br>
+        <input type="text" id="board" name="sscBoard" required maxlength="20"><br><br>
+
+        <label for="ssc">SSC GPA:</label><br>
+        <input type="text" id="ssc" name="ssc_gpa" required maxlength="5"><br><br>
+
+        <label for="dept">Preferred Department:</label><br>
+        <select id="dept" name="department" required>
+            <option value="">-- Select Department --</option>
+            <option value="CSE">Computer Science & Engineering</option>
+            <option value="EEE">Electrical & Electronic Engineering</option>
+            <option value="BBA">Business Administration</option>
+            <option value="ENG">English</option>
+            <option value="LAW">Law</option>
+        </select><br><br>
+
+        <label for="session">Admission Session:</label><br>
+        <input type="text" id="session" name="session" required maxlength="9" placeholder="2025-2026">
+        <br><br>
+    </fieldset>
+
+    
+    <fieldset>
+        <legend>Documents Upload</legend>
+
+        <label for="photo">Upload Photo:</label><br>
+        <input type="file" id="photo" name="photo" required><br><br>
+
+        <label for="transcript">Upload Transcript:</label><br>
+        <input type="file" id="transcript" name="transcript" required><br><br>
+    </fieldset>
+
+    
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
